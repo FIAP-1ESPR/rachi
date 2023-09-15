@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;900&family=Sora:wght@100;300;500;700&display=swap');
 
 * {
   margin: 0;
@@ -14,25 +14,107 @@ body {
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 4rem;
 }
 
 nav h1 {
   font-size: 2rem;
 }
 
-nav ul { 
+nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 
-  font-family: 'Inter', Arial;
+  font-family: "Inter", Arial;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-/* nav ul li {
-  margin: 0 1rem;
-} */
+section#banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #EFF8FF;
+  padding: 3rem 4rem;
+}
+
+div#banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+div#banner-text h1, p {
+  font-family: "Sora", Arial;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+div#banner-left button {
+  padding: 1rem 2rem;
+  width: 40%;
+  border: none;
+  border-radius:15rem;
+  background-color: #0F9AFE;
+  color: #fff;
+  font-weight: 600;
+  font-family:  "Inter", Arial;
+  font-size: 1.2rem;
+  box-shadow: #0F9AFE80 3px 4px 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div#banner-left button:hover {
+  background-color: #0065c4;
+  font-size: 1.3rem;
+}
+
+section#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  padding: 3rem 4rem;
+}
+
+section#about h2 {
+  font-family: "Sora", Arial;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+div#about-cards {
+  display:flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+div.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Sora", Arial;
+  width: 20.5rem;
+}
+
+div.card i {
+  font-size: 3rem;
+  color: #0F9AFE;
+}
+
+div.card h3{
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+div.card p{
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
