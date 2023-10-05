@@ -48,7 +48,7 @@ div#banner-left {
   gap: 2rem;
 }
 
-div#banner-text h1, p {
+div#banner-text h1, div#banner-text p {
   font-family: "Sora", Arial;
   font-size: 3rem;
   font-weight: 500;
@@ -117,4 +117,39 @@ div.card p{
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
+}
+
+section#download-app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #EFF8FF;
+  padding: 3rem 4rem;
+}
+
+section#download-app div#download-app-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+div#btn-store-download {
+  display: flex;
+  gap: 1rem;
+}
+
+section#download-app h3 {
+  font-family: "Sora", Arial;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+section#download-app div p {
+  width: 27rem;
+  line-height: 1.8rem;
+  font-family: "Inter", Arial;
+  font-size: 1rem;
+  color: #6E7275;
 }
